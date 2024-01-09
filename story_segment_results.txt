@@ -1,0 +1,36 @@
+Here's how you can segment the text into chunks with their respective prompts for an image generator tool, formatted in a json-like structure for Python readability:
+
+```json
+{
+  "chunk1": {
+    "text": "Had a glass of champagne, nice chat. A good date overall.",
+    "prompt": "A woman and a man having a pleasant conversation over glasses of champagne in an elegant setting, pixar-style, --ar 9:16"
+  },
+  "chunk2": {
+    "text": "However, when the action had barely just begun he went into some sort of a trance touching himself all over.",
+    "prompt": "A man in a dimly lit bedroom suddenly in a trance-like state, beginning to touch himself as if in a different world, pixar-style, --ar 9:16"
+  },
+  "chunk3": {
+    "text": "He looked like he was having sex with an entity.",
+    "prompt": "A man appearing to be engaged in an intimate act with an unseen presence, confusion evident on his face, pixar-style, --ar 9:16"
+  },
+  "chunk4": {
+    "text": "I stepped aside and observed with curiosity.",
+    "prompt": "A woman stepping aside in a bedroom, looking on with a curious and baffled expression, pixar-style, --ar 9:16"
+  },
+  "chunk5": {
+    "text": "He didn't even notice.",
+    "prompt": "A man completely oblivious to his surroundings as he is lost in his trance, unaware of the woman observing him, pixar-style, --ar 9:16"
+  },
+  "chunk6": {
+    "text": "When he came back from wherever he was I politely asked him to leave.",
+    "prompt": "A woman gently but firmly requesting the trance-awakened man to leave her bedroom, pixar-style, --ar 9:16"
+  },
+  "chunk7": {
+    "text": "Weirdest experience ever.",
+    "prompt": "The woman alone in her bedroom, looking puzzled and shaking her head in disbelief after the man has left, pixar-style, --ar 9:16"
+  }
+}
+```
+
+This structure segments the story into manageable parts for the image generator, each accompanied by a prompt designed to reflect the moment described in a Pixar-style animation with the specified aspect ratio.
