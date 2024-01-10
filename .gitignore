@@ -3,3 +3,10 @@ images
 __pycache__/
 .DS_Store
 .env
+audio/
+background_audio/
+videos/
+qscreenshot.png
+resized_qscreenshot.png
+resized_screenshot.png
+screenshot.png

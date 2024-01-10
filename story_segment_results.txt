@@ -1,36 +1,36 @@
-Here's how you can segment the text into chunks with their respective prompts for an image generator tool, formatted in a json-like structure for Python readability:
+Here's how you might structure the story into chunks and create prompts for image generation in a JSON-like format:
 
 ```json
 {
-  "chunk1": {
-    "text": "Had a glass of champagne, nice chat. A good date overall.",
-    "prompt": "A woman and a man having a pleasant conversation over glasses of champagne in an elegant setting, pixar-style, --ar 9:16"
+  "chunk_1": {
+    "text": "This is my brother's story but it's a good one.",
+    "prompt": "Man recounting an intriguing story with a captivated expression, emphasizing the charm of the tale, Pixar 3D Animation, --ar 9:16"
   },
-  "chunk2": {
-    "text": "However, when the action had barely just begun he went into some sort of a trance touching himself all over.",
-    "prompt": "A man in a dimly lit bedroom suddenly in a trance-like state, beginning to touch himself as if in a different world, pixar-style, --ar 9:16"
+  "chunk_2": {
+    "text": "He was working as a night porter at an old hotel from the 18th century in the Northern English countryside.",
+    "prompt": "A Caucasian night porter working late at an old 18th century hotel set amidst the Northern English countryside, night-time, Pixar 3D Animation, --ar 9:16"
   },
-  "chunk3": {
-    "text": "He looked like he was having sex with an entity.",
-    "prompt": "A man appearing to be engaged in an intimate act with an unseen presence, confusion evident on his face, pixar-style, --ar 9:16"
+  "chunk_3": {
+    "text": "One night, a woman came down to reception as white as a sheet with her suitcase saying she could not stay there.",
+    "prompt": "Scared white woman, as pale as a sheet, with a suitcase at the hotel reception during the night, concerned demeanor, Pixar 3D Animation, --ar 9:16"
   },
-  "chunk4": {
-    "text": "I stepped aside and observed with curiosity.",
-    "prompt": "A woman stepping aside in a bedroom, looking on with a curious and baffled expression, pixar-style, --ar 9:16"
+  "chunk_4": {
+    "text": "My brother enquired as to why, she said she could hear children laughing all night",
+    "prompt": "Caucasian male hotel worker empathetically listening to a distressed white female guest who is explaining her experience with children laughing at night, Pixar 3D Animation, --ar 9:16"
   },
-  "chunk5": {
-    "text": "He didn't even notice.",
-    "prompt": "A man completely oblivious to his surroundings as he is lost in his trance, unaware of the woman observing him, pixar-style, --ar 9:16"
+  "chunk_5": {
+    "text": "and a child had entered her room with a candle and was standing at the foot of the bed and wouldn't leave.",
+    "prompt": "Scary ghost with shape of a child with no face holding a candle standing at entrance of a dark bedroom, unsettling atmosphere, Pixar 3D Animation, --ar 9:16"
   },
-  "chunk6": {
-    "text": "When he came back from wherever he was I politely asked him to leave.",
-    "prompt": "A woman gently but firmly requesting the trance-awakened man to leave her bedroom, pixar-style, --ar 9:16"
+  "chunk_6": {
+    "text": "My brother mentioned it to his manager the following morning",
+    "prompt": "Caucasian man discussing with his Caucasian manager in a hotel during the morning, concerned yet professional, Pixar 3D Animation, --ar 9:16"
   },
-  "chunk7": {
-    "text": "Weirdest experience ever.",
-    "prompt": "The woman alone in her bedroom, looking puzzled and shaking her head in disbelief after the man has left, pixar-style, --ar 9:16"
+  "chunk_7": {
+    "text": "and he was told that it is a regular occurrence - before the hotel was a hotel it used to be used as a school and kindergarten over 100 years ago.",
+    "prompt": "an 1800s old school with small kids running around, spooky environment, eerie, mysterious, Pixar 3D Animation, --ar 9:16"
   }
 }
 ```
 
-This structure segments the story into manageable parts for the image generator, each accompanied by a prompt designed to reflect the moment described in a Pixar-style animation with the specified aspect ratio.
+Keep in mind that while creating prompts for AI image generation, it's essential to respect sensitivities around race and focus on the story's elements that are crucial for visuals. Since the original story did not provide details on the race of the characters, I assumed they are white, given the context of Northern England; if the race is not specified or relevant, it may not be necessary to include it in the prompts. Adjust prompts according to the story's needs and ethical considerations.

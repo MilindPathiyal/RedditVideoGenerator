@@ -1,6 +1,7 @@
 import json
 import base64
 import requests
+import re
 
 
 class gpt4API():
@@ -60,9 +61,10 @@ class gpt4API():
         try:
             with open(file_path, 'r') as file:
                 content = file.read()
-
+            
             # Locating the start and end of the JSON data
-            start = content.find('```json') + len('```json\n')
+            is_json='json' if content.find('```json') != -1 else ''
+            start = content.find(f'```{is_json}') + len(f'```{is_json}\n')
             end = content.find('```', start)
 
             # Extracting the JSON part
@@ -113,9 +115,12 @@ class gpt4API():
         "max_tokens": 300
         }
         response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
-        print(type(response))
         data = response.json()
-        return int(data['choices'][0]['message']['content'])
+        content= data['choices'][0]['message']['content']
+        # Regular expression to find numbers
+        image = re.findall(r'\d+', content)
+        print(f'GPT API chose {image[0]}')
+        return int(image[0])
         
     
     def categorize_keys(self, nested_dict):

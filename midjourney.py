@@ -17,6 +17,7 @@ class MidjourneyApi():
         self.message_id = ""
         self.custom_id = ""
         self.image_path_str = ""
+        self.custom_ids = []
         
 
     def send_message(self):
@@ -85,8 +86,8 @@ class MidjourneyApi():
                 self.message_id = most_recent_message_id
                 components = messages[0]['components'][0]['components']
                 buttons = [comp for comp in components if comp.get('label') in ['U1', 'U2', 'U3', 'U4']]
-                custom_ids = [button['custom_id'] for button in buttons]
-                self.custom_id = custom_ids[self.button_option]
+                self.custom_ids = [button['custom_id'] for button in buttons]
+                self.custom_id = self.custom_ids[self.button_option]
                 break
             except:
                 ValueError("Timeout")
@@ -136,6 +137,7 @@ class MidjourneyApi():
                 break
             except:
                 raise ValueError("Timeout")
+        return
             
             
     def image_path(self):
